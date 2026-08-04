@@ -97,9 +97,11 @@ name: "💻 Workstations"
   #   • https://fleetdm.com/guides/enforce-os-updates
   ###########################################################
   controls:
-  macos_updates:
+    macos_updates:
      deadline: "2030-04-01"
      minimum_version: "26.0"
+    enable_disk_encryption: true
+    enable_recovery_lock_password: true
   #   update_new_hosts: true
   # windows_updates:
   #   deadline_days: 7
