@@ -64,16 +64,6 @@ setup_experience:
   #     - "x86-based Windows hosts"
   # ```  
   ###########################################################
-  apple_settings:
-    configuration_profiles:
-#      - paths: ../platforms/macos/declaration-profiles/*.json
-      - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
-        labels_include_all:
-          - Department - Engineering
-  windows_settings:
-    configuration_profiles:
-      - paths: ../platforms/windows/configuration-profiles/*.xml
-
   ###########################################################
   # Managed disk encryption
   #
@@ -103,6 +93,15 @@ setup_experience:
     enable_disk_encryption: true
     enable_recovery_lock_password: true
 
+    apple_settings:
+      configuration_profiles:
+#      - paths: ../platforms/macos/declaration-profiles/*.json
+      - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+        labels_include_all:
+          - Department - Engineering
+  windows_settings:
+    configuration_profiles:
+      - paths: ../platforms/windows/configuration-profiles/*.xml
   #   update_new_hosts: true
   # windows_updates:
   #   deadline_days: 7
