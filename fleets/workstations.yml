@@ -15,7 +15,6 @@
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
-
     ###########################################################
     # Configure the macOS setup experience
     #
@@ -86,20 +85,22 @@ name: "💻 Workstations"
   #   • https://fleetdm.com/docs/configuration/yaml-files#windows-updates
   #   • https://fleetdm.com/guides/enforce-os-updates
   ###########################################################
-  controls:
-    setup_experience:
-    macos_updates:
-     deadline: "2026-07-30"
-     minimum_version: "26.4"
-    enable_disk_encryption: true
-    enable_recovery_lock_password: true
 
-    apple_settings:
-      configuration_profiles:
+controls:
+  setup_experience:
+  macos_updates:
+    deadline: "2026-07-30"
+    minimum_version: "26.4"
+  enable_disk_encryption: true
+  enable_recovery_lock_password: true
+
+  apple_settings:
+    configuration_profiles:
 #      - paths: ../platforms/macos/declaration-profiles/*.json
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
           - Department - Engineering
+  
   windows_settings:
     configuration_profiles:
       - paths: ../platforms/windows/configuration-profiles/*.xml
