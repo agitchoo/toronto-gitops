@@ -15,7 +15,7 @@
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 name: "💻 Workstations"
-  setup_experience:
+  #setup_experience:
     ###########################################################
     # Configure the macOS setup experience
     #
